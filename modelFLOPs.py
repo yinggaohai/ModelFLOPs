@@ -1,5 +1,6 @@
 #coding=utf-8
-import tensorflow as tf
+# 获取DenseNet模型的浮点运算量
+import tensorflow as tf  
 def load_pb(pb):
     with tf.gfile.GFile(pb, "rb") as f:
         graph_def = tf.GraphDef()
